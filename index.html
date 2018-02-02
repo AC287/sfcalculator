@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Calculator</title>
+
+    <link rel="stylesheet" href="style.css"/>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>THIS IS A SAMPLE SF CALCULATOR</h1>
+      <form id="sfcalculator">
+        <div class="form-group col-xs-3">
+          <!-- <label for ="ceilingHeight">Ceiling Height: </label> -->
+          <input type="number" class="form-control" id="ceiling-height" placeholder="Enter your ceiling height." min=1 required>
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate</button>
+        <button type="button" id="user-reset" class="btn btn-secondary">Reset Field</button>
+      </form>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Cell Fan Kit</th>
+            <th scope="col">Iso 8<br>15 ACH</th>
+            <th scope="col">Iso 7<br>30 ACH*</th>
+            <th scope="col">Iso 6<br>90 ACH</th>
+          </tr>
+          <tr>
+            <td>1500</td>
+            <td class="iso8-15-1500"></td>
+            <td class="iso7-30-1500"></td>
+            <td class="iso6-90-1500"></td>
+          </tr>
+          <tr>
+            <td>3000</td>
+            <td class="iso8-15-3000"></td>
+            <td class="iso7-30-3000"></td>
+            <td class="iso6-90-3000"></td>
+          </tr>
+          <tr>
+            <td>5000</td>
+            <td class="iso8-15-5000"></td>
+            <td class="iso7-30-5000"></td>
+            <td class="iso6-90-5000"></td>
+          </tr>
+
+        </thead>
+      </table>
+      <hr/>
+      <p>*Meets USP 797 standard</p>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+
+</html>
